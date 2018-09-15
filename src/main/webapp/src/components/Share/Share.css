@@ -1,0 +1,28 @@
+.Container{
+    box-shadow: 0px 1px 3px #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color:gray;
+    height: 38px;
+    align-items: center;
+}
+
+.Text{
+    font-size: 12px;
+    margin-right: 1%;
+}
+
+.Break{
+    margin-right: 1%;
+}
+
+.Social{
+    margin-right: 1%;
+}
+
+.Social:hover{
+    cursor: pointer;
+    color:#3f51b5;
+}
