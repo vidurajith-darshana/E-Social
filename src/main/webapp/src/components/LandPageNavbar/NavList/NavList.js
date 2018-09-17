@@ -20,7 +20,7 @@ class NavList extends Component{
         const navItems=this.state.items.map((item,index)=>(
             <div key={index}>
                 <div onClick={this.navItemOnClick} className={classes.NavItem}>
-                    <NavItem state="" icon={item.icon} link="#">{item.name}</NavItem>
+                    <NavItem icon={item.icon} link="#">{item.name}</NavItem>
                 </div>
                 {this.state.items.length-1===index?null:<div className={classes.Divider}></div>}
             </div>
@@ -28,7 +28,7 @@ class NavList extends Component{
         ));
 
         return(
-            this.props.isToggle?<div className={classes.ContainerOn}>
+            this.props.isToggle?<div style={this.props.isScroll?{marginTop:'30px'}:null} className={classes.ContainerOn}>
                 {navItems}
             </div>:<div className={classes.ContainerOff}></div>
         )
@@ -37,7 +37,8 @@ class NavList extends Component{
 
 const mapStateToProps=(state)=>{
     return{
-        isToggle:state.toggleRed.click
+        isToggle:state.toggleRed.click,
+        isScroll:state.landPageRed.scroll
     }
 }
 

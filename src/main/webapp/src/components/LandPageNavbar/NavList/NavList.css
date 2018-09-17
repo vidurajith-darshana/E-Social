@@ -1,5 +1,5 @@
 .ContainerOn{
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #2f79ca;
     z-index: 500;
@@ -12,7 +12,7 @@
 }
 
 .ContainerOff{
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #2f79ca;
     z-index: 500;

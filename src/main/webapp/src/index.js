@@ -9,10 +9,12 @@ import {Provider} from "react-redux";
 
 import BackdropReducer from './store/reducer/BackdropReducer';
 import ToggleReducer from './store/reducer/ToggleReducer';
+import LandPageReducer from './store/reducer/LandPageReducer';
 
 const rootReducer=combineReducers({
     backdropRed:BackdropReducer,
-    toggleRed:ToggleReducer
+    toggleRed:ToggleReducer,
+    landPageRed:LandPageReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

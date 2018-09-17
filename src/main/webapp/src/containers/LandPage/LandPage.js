@@ -2,24 +2,39 @@ import React,{Component} from 'react';
 import Navbar from "../../components/LandPageNavbar/Navbar";
 import Share from '../../components/Share/Share';
 import NavList from "../../components/LandPageNavbar/NavList/NavList";
-import classes from './LandPage.css';
+import {connect} from "react-redux";
+import * as actionCreators from '../../store/action/index';
+import Carousel from "../../components/Carousel/LandPageCarousel/Carousel";
+import Content from "../../components/LandPageContent/Content";
 
 class LandPage extends Component{
 
     scrollOnPage=()=>{
-        console.log('hi')
+        window.scrollY>=40?this.props.scrollHandler(true):this.props.scrollHandler(false);
+    }
+
+    componentDidMount(){
+        window.addEventListener('scroll',this.scrollOnPage);
     }
 
     render(){
         return(
-            <div id="landPage" className={classes.Scroll} onScroll={this.scrollOnPage}>
+            <div>
                 <Share/>
                 <Navbar/>
                 <NavList/>
-                <div style={{height:'800px'}}></div>
+                <Carousel/>
+                <Content/>
+
             </div>
         )
     }
 }
 
-export default LandPage;
+const mapDispatchToProps=(dispatch)=>{
+    return{
+        scrollHandler:(data)=>dispatch(actionCreators.scrollOnHandle(data))
+    }
+}
+
+export default connect(null,mapDispatchToProps)(LandPage);

@@ -1,0 +1,12 @@
+.Container{
+    color: black;
+    text-align: center;
+    background-color: white;
+    margin-top: 400px;
+    overflow-x: hidden;
+}
+
+.Container img{
+    width: 200px;
+    height: 200px;
+}

@@ -9,3 +9,9 @@ export{
 export{
     toggleOnHandle
 }from './ToggleActions';
+
+// land page process
+
+export {
+    scrollOnHandle
+}from './LandPageActions';

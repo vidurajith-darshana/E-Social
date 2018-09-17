@@ -1,0 +1,23 @@
+.Container{
+    color: black;
+    text-align: center;
+    background-color: white;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+
+.Container img{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+.Service{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: hidden;
+}
