@@ -1,0 +1,29 @@
+.Container{
+    width:100%;
+    background-color: #2f79ca;
+    overflow-x: hidden;
+    text-align: center;
+    color: white;
+}
+
+.Container h6{
+    color:black;
+}
+
+.Tag{
+    background-color: lightgray;
+    color: black;
+    border: gray;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width:90px;
+}
+
+.Image{
+    border-radius: 5px;
+    background-color: white;
+    padding: 1%;
+}

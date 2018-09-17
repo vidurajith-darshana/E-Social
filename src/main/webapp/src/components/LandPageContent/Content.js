@@ -3,6 +3,7 @@ import classes from './Content.css';
 import Introduction from "./Introduction/Introduction";
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 import Services from "./Services/Services";
+import Community from "./Community/Community";
 
 class Content extends Component{
 
@@ -15,6 +16,9 @@ class Content extends Component{
                 </ScrollableAnchor>
                 <ScrollableAnchor id="services">
                     <Services/>
+                </ScrollableAnchor>
+                <ScrollableAnchor id="community">
+                    <Community/>
                 </ScrollableAnchor>
             </div>
         );

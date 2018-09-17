@@ -1,0 +1,58 @@
+.Container{
+    color: black;
+    text-align: center;
+    background-color: white;
+    margin-top: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Container img{
+    width:100%;
+    margin-top: 5%;
+    filter:brightness(40%);
+}
+
+.Center{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+    .Center{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .Center{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .Center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Container img{
+        height: 400px;
+    }
+}

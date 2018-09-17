@@ -6,6 +6,7 @@ import {connect} from "react-redux";
 import * as actionCreators from '../../store/action/index';
 import Carousel from "../../components/Carousel/LandPageCarousel/Carousel";
 import Content from "../../components/LandPageContent/Content";
+import Footer from "../../components/Footer/Footer";
 
 class LandPage extends Component{
 
@@ -25,7 +26,7 @@ class LandPage extends Component{
                 <NavList/>
                 <Carousel/>
                 <Content/>
-
+                <Footer/>
             </div>
         )
     }

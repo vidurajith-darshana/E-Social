@@ -32,3 +32,23 @@
     cursor: pointer;
     color:#3f51b5;
 }
+
+.Notifications{
+    text-align: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    color: white;
+}
+
+.Chat{
+    text-align: center;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    color: white;
+}
