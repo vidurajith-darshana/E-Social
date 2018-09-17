@@ -1,0 +1,63 @@
+.ContainerOn{
+    position: absolute;
+    width: 100%;
+    background-color: #2f79ca;
+    z-index: 500;
+    display: none;
+    flex-direction: column;
+    margin-top: 1%;
+    height: 50%;
+    transition: 0.3s;
+    border-radius: 0 0 50px 40px;
+}
+
+.ContainerOff{
+    position: absolute;
+    width: 100%;
+    background-color: #2f79ca;
+    z-index: 500;
+    display: none;
+    flex-direction: column;
+    margin-top: 1%;
+    height: 0;
+    transition: 0.3s;
+}
+
+.NavItem{
+    margin-left: 10%;
+    margin-bottom: 6%;
+    margin-top: 4%;
+}
+
+.Divider{
+    height: 1px;
+    background-color: lightslategray;
+}
+
+@media only screen and (max-width: 700px) {
+    .ContainerOn{
+        display: flex;
+    }
+
+    .ContainerOff{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .ContainerOn{
+        height: 38%;
+    }
+
+    .ContainerOff{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .ContainerOn{
+        height: 60%;
+    }
+
+    .ContainerOff{
+        display: flex;
+    }
+}

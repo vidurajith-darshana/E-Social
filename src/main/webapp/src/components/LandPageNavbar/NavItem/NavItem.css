@@ -1,0 +1,65 @@
+.Link{
+    display:flex;
+    flex-direction: row;
+    color: white;
+    font-size: 14px;
+}
+
+.Link a{
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+    margin-top: 2%;
+}
+.Link a:hover{
+    border-bottom: 3px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.Link a:focus{
+    border-bottom: 3px solid white;
+}
+
+.ScrollLink{
+    display:flex;
+    flex-direction: row;
+    color: white;
+    font-size: 14px;
+}
+
+.ScrollLink a{
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+.ScrollLink a:focus{
+    border-bottom: 3px solid white;
+}
+
+.ScrollLink a:hover{
+    border-bottom: 3px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .Link{
+        display:flex;
+        flex-direction: row;
+        color: white;
+    }
+
+    .Link a{
+        color: white;
+        transition: 0.2s;
+        text-decoration: none;
+        margin-top: 2%;
+    }
+    .Link a:hover{
+        border-bottom: none;
+        cursor: pointer;
+    }
+}

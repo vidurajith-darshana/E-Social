@@ -7,7 +7,7 @@ const logo=()=>{
     return(
         <Ext>
             <div>
-                <img className={classes.Logo} src={logoIcon} />
+                <img className={classes.Logo} src={logoIcon} alt="logo"/>
             </div>
         </Ext>
     )
