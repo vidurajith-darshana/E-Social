@@ -3,15 +3,15 @@ package com.esocial.dto;
 public class FilesPostDTO {
 
     private int postFileId;
-    private int postId;
+    private PostDTO postDTO;
     private String fileName;
 
     public FilesPostDTO() {
     }
 
-    public FilesPostDTO(int postFileId, int postId, String fileName) {
+    public FilesPostDTO(int postFileId, PostDTO postDTO, String fileName) {
         this.postFileId = postFileId;
-        this.postId = postId;
+        this.postDTO = postDTO;
         this.fileName = fileName;
     }
 
@@ -23,12 +23,12 @@ public class FilesPostDTO {
         this.postFileId = postFileId;
     }
 
-    public int getPostId() {
-        return postId;
+    public PostDTO getPostDTO() {
+        return postDTO;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setPostDTO(PostDTO postDTO) {
+        this.postDTO = postDTO;
     }
 
     public String getFileName() {
@@ -43,7 +43,7 @@ public class FilesPostDTO {
     public String toString() {
         return "FilesPostDTO{" +
                 "postFileId=" + postFileId +
-                ", postId=" + postId +
+                ", postDTO=" + postDTO +
                 ", fileName='" + fileName + '\'' +
                 '}';
     }

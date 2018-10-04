@@ -3,8 +3,8 @@ package com.esocial.dto;
 public class ShareDTO {
 
     private int shareId;
-    private int userId;
-    private int postId;
+    private UserDTO userDTO;
+    private PostDTO postDTO;
     private String topic;
     private String date;
     private String time;
@@ -17,10 +17,10 @@ public class ShareDTO {
     public ShareDTO() {
     }
 
-    public ShareDTO(int shareId, int userId, int postId, String topic, String date, String time, boolean isPublic, boolean isPrivate, boolean isFriends, boolean isSpecificFriends, int specificUserId) {
+    public ShareDTO(int shareId, UserDTO userDTO, PostDTO postDTO, String topic, String date, String time, boolean isPublic, boolean isPrivate, boolean isFriends, boolean isSpecificFriends, int specificUserId) {
         this.shareId = shareId;
-        this.userId = userId;
-        this.postId = postId;
+        this.userDTO = userDTO;
+        this.postDTO = postDTO;
         this.topic = topic;
         this.date = date;
         this.time = time;
@@ -39,20 +39,20 @@ public class ShareDTO {
         this.shareId = shareId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getPostId() {
-        return postId;
+    public PostDTO getPostDTO() {
+        return postDTO;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setPostDTO(PostDTO postDTO) {
+        this.postDTO = postDTO;
     }
 
     public String getTopic() {
@@ -123,8 +123,8 @@ public class ShareDTO {
     public String toString() {
         return "ShareDTO{" +
                 "shareId=" + shareId +
-                ", userId=" + userId +
-                ", postId=" + postId +
+                ", userDTO=" + userDTO +
+                ", postDTO=" + postDTO +
                 ", topic='" + topic + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +

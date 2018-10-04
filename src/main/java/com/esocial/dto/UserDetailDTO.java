@@ -3,7 +3,7 @@ package com.esocial.dto;
 public class UserDetailDTO {
 
     private int userDetailId;
-    private int userId;
+    private UserDTO userDTO;
     private String fname;
     private String lname;
     private String profileImg;
@@ -23,9 +23,9 @@ public class UserDetailDTO {
     public UserDetailDTO() {
     }
 
-    public UserDetailDTO(int userDetailId,int userId, String fname, String lname, String profileImg, String gender, String birthday,String joinDay, String email, String mobNumber, String address, String hometown, String country, String education, String jobField, String position, String company) {
+    public UserDetailDTO(int userDetailId,UserDTO userDTO, String fname, String lname, String profileImg, String gender, String birthday,String joinDay, String email, String mobNumber, String address, String hometown, String country, String education, String jobField, String position, String company) {
         this.userDetailId=userDetailId;
-        this.userId = userId;
+        this.userDTO = userDTO;
         this.fname = fname;
         this.lname = lname;
         this.profileImg = profileImg;
@@ -59,12 +59,12 @@ public class UserDetailDTO {
         this.joinDay = joinDay;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
     public String getFname() {
@@ -183,7 +183,7 @@ public class UserDetailDTO {
     public String toString() {
         return "UserDetailDTO{" +
                 "userDetailId=" + userDetailId +
-                ", userId=" + userId +
+                ", userDTO=" + userDTO +
                 ", fname='" + fname + '\'' +
                 ", lname='" + lname + '\'' +
                 ", profileImg='" + profileImg + '\'' +

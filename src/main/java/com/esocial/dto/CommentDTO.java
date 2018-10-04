@@ -3,8 +3,8 @@ package com.esocial.dto;
 public class CommentDTO {
 
     private int commentId;
-    private int userId;
-    private int postId;
+    private UserDTO userDTO;
+    private PostDTO postDTO;
     private String comment;
     private boolean isReply;
     private int relatedCommentId;
@@ -14,10 +14,10 @@ public class CommentDTO {
     public CommentDTO() {
     }
 
-    public CommentDTO(int commentId, int userId, int postId, String comment, boolean isReply, int relatedCommentId, String date, String time) {
+    public CommentDTO(int commentId, UserDTO userDTO, PostDTO postDTO, String comment, boolean isReply, int relatedCommentId, String date, String time) {
         this.commentId = commentId;
-        this.userId = userId;
-        this.postId = postId;
+        this.userDTO = userDTO;
+        this.postDTO = postDTO;
         this.comment = comment;
         this.isReply = isReply;
         this.relatedCommentId = relatedCommentId;
@@ -33,20 +33,20 @@ public class CommentDTO {
         this.commentId = commentId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getPostId() {
-        return postId;
+    public PostDTO getPostDTO() {
+        return postDTO;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setPostDTO(PostDTO postDTO) {
+        this.postDTO = postDTO;
     }
 
     public String getComment() {
@@ -93,8 +93,8 @@ public class CommentDTO {
     public String toString() {
         return "CommentDTO{" +
                 "commentId=" + commentId +
-                ", userId=" + userId +
-                ", postId=" + postId +
+                ", userDTO=" + userDTO +
+                ", postDTO=" + postDTO +
                 ", comment='" + comment + '\'' +
                 ", isReply=" + isReply +
                 ", relatedCommentId=" + relatedCommentId +

@@ -3,15 +3,15 @@ package com.esocial.dto;
 public class FilesChatDTO {
 
     private int chatFileId;
-    private int chatId;
+    private ChatDTO chatDTO;
     private String fileName;
 
     public FilesChatDTO() {
     }
 
-    public FilesChatDTO(int chatFileId, int chatId, String fileName) {
+    public FilesChatDTO(int chatFileId, ChatDTO chatDTO, String fileName) {
         this.chatFileId = chatFileId;
-        this.chatId = chatId;
+        this.chatDTO = chatDTO;
         this.fileName = fileName;
     }
 
@@ -23,12 +23,12 @@ public class FilesChatDTO {
         this.chatFileId = chatFileId;
     }
 
-    public int getChatId() {
-        return chatId;
+    public ChatDTO getChatDTO() {
+        return chatDTO;
     }
 
-    public void setChatId(int chatId) {
-        this.chatId = chatId;
+    public void setChatDTO(ChatDTO chatDTO) {
+        this.chatDTO = chatDTO;
     }
 
     public String getFileName() {
@@ -43,7 +43,7 @@ public class FilesChatDTO {
     public String toString() {
         return "FilesChatDTO{" +
                 "chatFileId=" + chatFileId +
-                ", chatId=" + chatId +
+                ", chatDTO=" + chatDTO +
                 ", fileName='" + fileName + '\'' +
                 '}';
     }

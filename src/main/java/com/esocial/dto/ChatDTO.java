@@ -3,7 +3,7 @@ package com.esocial.dto;
 public class ChatDTO {
 
     private int chatId;
-    private int userId;
+    private UserDTO senderDTO;
     private int receiverId;
     private String message;
     private String date;
@@ -12,9 +12,9 @@ public class ChatDTO {
     public ChatDTO() {
     }
 
-    public ChatDTO(int chatId, int userId, int receiverId, String message, String date, String time) {
+    public ChatDTO(int chatId, UserDTO senderDTO, int receiverId, String message, String date, String time) {
         this.chatId = chatId;
-        this.userId = userId;
+        this.senderDTO = senderDTO;
         this.receiverId = receiverId;
         this.message = message;
         this.date = date;
@@ -29,12 +29,12 @@ public class ChatDTO {
         this.chatId = chatId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getSenderDTO() {
+        return senderDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setSenderDTO(UserDTO senderDTO) {
+        this.senderDTO = senderDTO;
     }
 
     public int getReceiverId() {
@@ -73,7 +73,7 @@ public class ChatDTO {
     public String toString() {
         return "ChatDTO{" +
                 "chatId=" + chatId +
-                ", userId=" + userId +
+                ", senderDTO=" + senderDTO +
                 ", receiverId=" + receiverId +
                 ", message='" + message + '\'' +
                 ", date='" + date + '\'' +

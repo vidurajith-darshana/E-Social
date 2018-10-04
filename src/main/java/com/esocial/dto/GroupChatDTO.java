@@ -3,11 +3,18 @@ package com.esocial.dto;
 public class GroupChatDTO {
 
     private int groupChatId;
-    private int userId;
-    private int chatId;
+    private UserDTO userDTO;
+    private ChatDTO chatDTO;
     private String groupName;
 
     public GroupChatDTO() {
+    }
+
+    public GroupChatDTO(int groupChatId, UserDTO userDTO, ChatDTO chatDTO, String groupName) {
+        this.groupChatId = groupChatId;
+        this.userDTO = userDTO;
+        this.chatDTO = chatDTO;
+        this.groupName = groupName;
     }
 
     public int getGroupChatId() {
@@ -18,20 +25,20 @@ public class GroupChatDTO {
         this.groupChatId = groupChatId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getChatId() {
-        return chatId;
+    public ChatDTO getChatDTO() {
+        return chatDTO;
     }
 
-    public void setChatId(int chatId) {
-        this.chatId = chatId;
+    public void setChatDTO(ChatDTO chatDTO) {
+        this.chatDTO = chatDTO;
     }
 
     public String getGroupName() {
@@ -46,8 +53,8 @@ public class GroupChatDTO {
     public String toString() {
         return "GroupChatDTO{" +
                 "groupChatId=" + groupChatId +
-                ", userId=" + userId +
-                ", chatId=" + chatId +
+                ", userDTO=" + userDTO +
+                ", chatDTO=" + chatDTO +
                 ", groupName='" + groupName + '\'' +
                 '}';
     }

@@ -3,17 +3,17 @@ package com.esocial.dto;
 public class UserRequestDTO {
 
     private int userRequestId;
-    private int userId;
-    private int requestId;
+    private UserDTO userDTO;
+    private RequestDTO requestDTO;
     private int accept;
 
     public UserRequestDTO() {
     }
 
-    public UserRequestDTO(int userRequestId, int userId, int requestId, int accept) {
+    public UserRequestDTO(int userRequestId, UserDTO userDTO, RequestDTO requestDTO, int accept) {
         this.userRequestId = userRequestId;
-        this.userId = userId;
-        this.requestId = requestId;
+        this.userDTO = userDTO;
+        this.requestDTO = requestDTO;
         this.accept = accept;
     }
 
@@ -25,20 +25,20 @@ public class UserRequestDTO {
         this.userRequestId = userRequestId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getRequestId() {
-        return requestId;
+    public RequestDTO getRequestDTO() {
+        return requestDTO;
     }
 
-    public void setRequestId(int requestId) {
-        this.requestId = requestId;
+    public void setRequestDTO(RequestDTO requestDTO) {
+        this.requestDTO = requestDTO;
     }
 
     public int getAccept() {
@@ -53,8 +53,8 @@ public class UserRequestDTO {
     public String toString() {
         return "UserRequestDTO{" +
                 "userRequestId=" + userRequestId +
-                ", userId=" + userId +
-                ", requestId=" + requestId +
+                ", userDTO=" + userDTO +
+                ", requestDTO=" + requestDTO +
                 ", accept=" + accept +
                 '}';
     }

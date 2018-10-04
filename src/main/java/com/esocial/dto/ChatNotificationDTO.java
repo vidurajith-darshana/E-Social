@@ -3,18 +3,18 @@ package com.esocial.dto;
 public class ChatNotificationDTO {
 
     private int chatNotifyId;
-    private int userId;
-    private int chatId;
+    private UserDTO userDTO;
+    private ChatDTO chatDTO;
     private String notification;
     private boolean isSee;
 
     public ChatNotificationDTO() {
     }
 
-    public ChatNotificationDTO(int chatNotifyId, int userId, int chatId, String notification, boolean isSee) {
+    public ChatNotificationDTO(int chatNotifyId, UserDTO userDTO, ChatDTO chatDTO, String notification, boolean isSee) {
         this.chatNotifyId = chatNotifyId;
-        this.userId = userId;
-        this.chatId = chatId;
+        this.userDTO = userDTO;
+        this.chatDTO = chatDTO;
         this.notification = notification;
         this.isSee = isSee;
     }
@@ -27,20 +27,20 @@ public class ChatNotificationDTO {
         this.chatNotifyId = chatNotifyId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getChatId() {
-        return chatId;
+    public ChatDTO getChatDTO() {
+        return chatDTO;
     }
 
-    public void setChatId(int chatId) {
-        this.chatId = chatId;
+    public void setChatDTO(ChatDTO chatDTO) {
+        this.chatDTO = chatDTO;
     }
 
     public String getNotification() {
@@ -63,8 +63,8 @@ public class ChatNotificationDTO {
     public String toString() {
         return "ChatNotificationDTO{" +
                 "chatNotifyId=" + chatNotifyId +
-                ", userId=" + userId +
-                ", chatId=" + chatId +
+                ", userDTO=" + userDTO +
+                ", chatDTO=" + chatDTO +
                 ", notification='" + notification + '\'' +
                 ", isSee=" + isSee +
                 '}';

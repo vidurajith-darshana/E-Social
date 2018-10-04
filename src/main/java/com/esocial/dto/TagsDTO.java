@@ -3,16 +3,16 @@ package com.esocial.dto;
 public class TagsDTO {
 
     private int tagId;
-    private int userId;
-    private int postId;
+    private UserDTO userDTO;
+    private PostDTO postDTO;
 
     public TagsDTO() {
     }
 
-    public TagsDTO(int tagId, int userId, int postId) {
+    public TagsDTO(int tagId, UserDTO userDTO, PostDTO postDTO) {
         this.tagId = tagId;
-        this.userId = userId;
-        this.postId = postId;
+        this.userDTO = userDTO;
+        this.postDTO = postDTO;
     }
 
     public int getTagId() {
@@ -23,28 +23,28 @@ public class TagsDTO {
         this.tagId = tagId;
     }
 
-    public int getUserId() {
-        return userId;
+    public UserDTO getUserDTO() {
+        return userDTO;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserDTO(UserDTO userDTO) {
+        this.userDTO = userDTO;
     }
 
-    public int getPostId() {
-        return postId;
+    public PostDTO getPostDTO() {
+        return postDTO;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setPostDTO(PostDTO postDTO) {
+        this.postDTO = postDTO;
     }
 
     @Override
     public String toString() {
         return "TagsDTO{" +
                 "tagId=" + tagId +
-                ", userId=" + userId +
-                ", postId=" + postId +
+                ", userDTO=" + userDTO +
+                ", postDTO=" + postDTO +
                 '}';
     }
 }
