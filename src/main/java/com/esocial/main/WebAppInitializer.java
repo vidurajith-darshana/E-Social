@@ -1,5 +1,6 @@
 package com.esocial.main;
 
+import com.esocial.security.WebSecurityConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -7,7 +8,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebRootConfig.class};
+        return new Class[]{WebRootConfig.class, WebSecurityConfig.class};
     }
 
     @Override

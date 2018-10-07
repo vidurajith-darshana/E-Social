@@ -1,30 +1,30 @@
 package com.esocial.dto;
 
-public class LikeDTO {
+public class ReactDTO {
 
-    private int likeId;
+    private int reactId;
     private UserDTO userDTO;
     private PostDTO postDTO;
     private CommentDTO commentDTO;
     private int react;
 
-    public LikeDTO() {
+    public ReactDTO() {
     }
 
-    public LikeDTO(int likeId, UserDTO userDTO, PostDTO postDTO, CommentDTO commentDTO, int react) {
-        this.likeId = likeId;
+    public ReactDTO(int reactId, UserDTO userDTO, PostDTO postDTO, CommentDTO commentDTO, int react) {
+        this.reactId = reactId;
         this.userDTO = userDTO;
         this.postDTO = postDTO;
         this.commentDTO = commentDTO;
         this.react = react;
     }
 
-    public int getLikeId() {
-        return likeId;
+    public int getReactId() {
+        return reactId;
     }
 
-    public void setLikeId(int likeId) {
-        this.likeId = likeId;
+    public void setReactId(int reactId) {
+        this.reactId = reactId;
     }
 
     public UserDTO getUserDTO() {
@@ -61,8 +61,8 @@ public class LikeDTO {
 
     @Override
     public String toString() {
-        return "LikeDTO{" +
-                "likeId=" + likeId +
+        return "ReactDTO{" +
+                "reactId=" + reactId +
                 ", userDTO=" + userDTO +
                 ", postDTO=" + postDTO +
                 ", commentDTO=" + commentDTO +
