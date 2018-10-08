@@ -7,9 +7,9 @@ class Footer extends Component{
     render(){
         return(
             <div className={classes.Container}>
-                <div className="row" style={{marginTop:'2%'}} >
+                <div className="row" style={{marginTop:'7%'}} >
 
-                    <div style={{marginTop:'4%'}} className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <div style={{marginTop:'4%',marginBottom:'10%'}} className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <h6>About Us</h6>
                         <hr/>
                         <p>E-Social is a computer-based technology that facilitates the sharing of ideas and information and the building of virtual networks

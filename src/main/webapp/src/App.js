@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 import Routes from "./Routes/Routes";
 import Backdrop from "./components/Backdrop/Backdrop";
+import {withRouter} from "react-router-dom";
+import Ext from "./hoc/Ext/Ext";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Ext>
         <Backdrop/>
         <Routes/>
-      </div>
+      </Ext>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

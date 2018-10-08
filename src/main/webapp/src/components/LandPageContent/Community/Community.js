@@ -19,10 +19,10 @@ class Community extends Component{
                         </div>
                         <div style={{marginTop:'5%'}} className="row">
                             <div style={{textAlign:'right'}} className="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
-                                <button style={{width:'150px',boxShadow:'none',outline:'none !important'}} type="button" className="btn btn-outline-primary">SignUp</button>
+                                <a href="/user/signup" style={{width:'150px',boxShadow:'none',outline:'none !important'}} role="button" className="btn btn-outline-primary">SignUp</a>
                             </div>
                             <div style={{textAlign:'left'}} className="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
-                                <button style={{width:'150px',boxShadow:'none',outline:'none !important'}} type="button" className="btn btn-outline-danger">Login</button>
+                                <a href="/user/signin" style={{width:'150px',boxShadow:'none',outline:'none !important'}} role="button" className="btn btn-outline-danger">Login</a>
                             </div>
                         </div>
                     </div>
