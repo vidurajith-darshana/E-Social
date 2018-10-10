@@ -7,6 +7,7 @@ import * as actionCreators from '../../store/action/index';
 import Carousel from "../../components/Carousel/LandPageCarousel/Carousel";
 import Content from "../../components/LandPageContent/Content";
 import Footer from "../../components/Footer/Footer";
+import {withRouter} from "react-router-dom";
 
 class LandPage extends Component{
 
@@ -15,6 +16,7 @@ class LandPage extends Component{
     }
 
     componentDidMount(){
+        console.log(this.props)
         window.addEventListener('scroll',this.scrollOnPage);
     }
 
