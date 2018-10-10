@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ViewController {
-    @RequestMapping("/")
+    @RequestMapping(value={"/","/user/signin"})
     public String index() {
         return "index";
     }
