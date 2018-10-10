@@ -1,4 +1,5 @@
 .idea/
+e-social.iml
 src/main/webapp/.idea/
 src/main/webapp/node_modules/
 src/main/webapp/build/
