@@ -28,5 +28,14 @@ public class WebAppConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/images/item/**").addResourceLocations("/WEB-INF/images/item/")
                 .setCacheControl(CacheControl.maxAge(2, TimeUnit.HOURS).cachePublic());
 
+        registry.addResourceHandler("/static/css/**").addResourceLocations("/build/static/css/")
+                .setCacheControl(CacheControl.maxAge(2, TimeUnit.HOURS).cachePublic());
+
+        registry.addResourceHandler("/static/js/**").addResourceLocations("/build/static/js/")
+                .setCacheControl(CacheControl.maxAge(2, TimeUnit.HOURS).cachePublic());
+
+        registry.addResourceHandler("/static/media/**").addResourceLocations("/build/static/media/")
+                .setCacheControl(CacheControl.maxAge(2, TimeUnit.HOURS).cachePublic());
+
     }
 }
