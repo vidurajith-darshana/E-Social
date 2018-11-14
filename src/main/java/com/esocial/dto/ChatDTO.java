@@ -1,10 +1,12 @@
 package com.esocial.dto;
 
+import java.util.Set;
+
 public class ChatDTO {
 
     private int chatId;
     private UserDTO senderDTO;
-    private int receiverId;
+    private Set<Integer> receiverIds;
     private String message;
     private String date;
     private String time;
@@ -12,10 +14,10 @@ public class ChatDTO {
     public ChatDTO() {
     }
 
-    public ChatDTO(int chatId, UserDTO senderDTO, int receiverId, String message, String date, String time) {
+    public ChatDTO(int chatId, UserDTO senderDTO, Set<Integer> receiverIds, String message, String date, String time) {
         this.chatId = chatId;
         this.senderDTO = senderDTO;
-        this.receiverId = receiverId;
+        this.receiverIds = receiverIds;
         this.message = message;
         this.date = date;
         this.time = time;
@@ -37,12 +39,12 @@ public class ChatDTO {
         this.senderDTO = senderDTO;
     }
 
-    public int getReceiverId() {
-        return receiverId;
+    public Set<Integer> getReceiverIds() {
+        return receiverIds;
     }
 
-    public void setReceiverId(int receiverId) {
-        this.receiverId = receiverId;
+    public void setReceiverIds(Set<Integer> receiverIds) {
+        this.receiverIds = receiverIds;
     }
 
     public String getMessage() {
@@ -74,7 +76,7 @@ public class ChatDTO {
         return "ChatDTO{" +
                 "chatId=" + chatId +
                 ", senderDTO=" + senderDTO +
-                ", receiverId=" + receiverId +
+                ", receiverIds=" + receiverIds +
                 ", message='" + message + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
